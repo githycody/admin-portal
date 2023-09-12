@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--<link rel="icon" href="/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product Data</title>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--End Font-->
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+   <!-- <div id="app"></div>-->
+    <div class="grid-container">
+
+    <!--Header-->
+    <header class ="header">
+    <div class="menu-icon" onclick="openSidebar()">
+      <span class="material-icons-outlined">menu</span> 
+    </div>
+
+    <div class = "header-left">
+      <span class="material-icons-outlined">search</span>
+    </div>
+    <div class="header-right">
+      <span class="material-icons-outlined">notifications</span>
+      <span class="material-icons-outlined">mail</span>
+      <span class="material-icons-outlined">account_circle</span>
+    </div>
+  </header>
+
+    <!--End Header-->
+
+    <!--Sidebar-->
+    <aside id="sidebar">
+    <div class="sidebar-title">
+      <div class="sidebar-brand">
+        <span class="material-icons-outlined">chat</span> ShopMate
+      </div>
+      <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+    </div>
+
+    <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">dashboard</span> 
+          <a href="dashboard.html"> Dashboard</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">storefront</span> 
+          <a href="storeData.html"> Manage Store Data </a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">inventory_2</span> 
+          <a href="ProductData.html"> Manage Product Data </a>
+        </li>
+        <!--
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">tune</span> Customize Chatbot
+      </li>
+    -->
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">quiz</span>
+          <a href="faq.html"> FAQ</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">history</span> 
+          <a href="chatbotHistory.html"> Chatbot History </a>
+        </li>
+      </ul>
+  </aside>
+    <!--End Sidebar-->
+
+    <!--Main-->
+    <main class="main-container">
+    <div class="main-title">
+      <p class = "font-weight-bold"> EDIT PRODUCT DATA </p>
+    </div>
+
+    <form action="/action_page.php">
+        <label for="pname">Product name:</label><br>
+        <input type="text" id="pname" name="pname" value="Wuthering Heights"><br><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" value="Emily Bronte"><br><br>
+        <label for="genre">Genre:</label><br>
+        <input type="text" id="genre" name="genre" value="Romance novel, Tragedy"><br><br>
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price" value="R175"><br><br>
+        <label for="category">Category:</label><br>
+        <input type="text" id="category" name="category" value="Romance"><br><br>
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description" value="Two families of the landed 
+        gentry living on the West Yorkshire moors, the Earnshaws and the Lintons, and their turbulent 
+        relationships with the Earnshaws' foster son, Heathcliff."><br><br>
+      </form> 
+
+    <button class="button button1">Edit</button>
+    <button class="button button2">Delete</button>
+    
+   
+  </main>
+    <!--End Main-->
+  </div>
+
+  <!--Scripts-->
+  <!--ApexCharts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js"></script>
+
+    <!--JS link-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

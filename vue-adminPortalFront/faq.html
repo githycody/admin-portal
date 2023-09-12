@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--<link rel="icon" href="/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREQUENTLY ASKED QUESTIONS</title>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--End Font-->
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+   <!-- <div id="app"></div>-->
+    <div class="grid-container">
+
+    <!--Header-->
+    <header class ="header">
+    <div class="menu-icon" onclick="openSidebar()">
+      <span class="material-icons-outlined">menu</span> 
+    </div>
+
+    <div class = "header-left">
+      <span class="material-icons-outlined">search</span>
+    </div>
+    <div class="header-right">
+      <span class="material-icons-outlined">notifications</span>
+      <span class="material-icons-outlined">mail</span>
+      <span class="material-icons-outlined">account_circle</span>
+    </div>
+  </header>
+
+    <!--End Header-->
+
+    <!--Sidebar-->
+    <aside id="sidebar">
+    <div class="sidebar-title">
+      <div class="sidebar-brand">
+        <span class="material-icons-outlined">chat</span> ShopMate
+      </div>
+      <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+    </div>
+
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">dashboard</span> 
+        <a href="dashboard.html"> Dashboard</a>
+      </li>
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">storefront</span> 
+        <a href="storeData.html"> Manage Store Data </a>
+      </li>
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">inventory_2</span> 
+        <a href="ProductData.html"> Manage Product Data </a>
+      </li>
+      <!--
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">tune</span> Customize Chatbot
+      </li>
+    -->
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">quiz</span>
+        <a href="faq.html"> FAQ</a>
+      </li>
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">history</span> 
+        <a href="chatbotHistory.html"> Chatbot History </a>
+      </li>
+    </ul>
+  </aside>
+    <!--End Sidebar-->
+
+    <!--Main-->
+    <main class="main-container">
+    <div class="main-title">
+      <p class = "font-weight-bold"> FREQUENTLY ASKED QUESTIONS </p>
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <h2 class="question">Q: What are the top 5 best selling books?</h2>
+            <p class="answer">A: Wuthering Heights, Jane Eyre, The Odessy, Ulysses, The Great Gatsby.</p>
+        </div>
+        <div class="faq-item">
+            <h2 class="question">Q: What is the best selling romance novel?</h2>
+            <p class="answer">A: Pride and Prejudice by Jane Austen (1813)- Estimated 30M+ Copies Sold.</p>
+        </div>
+        <div class="faq-item">
+            <h2 class="question">Q: Please help me find a drama fiction book that takes place in England</h2>
+            <p class="answer">A: "The Murder of Roger Ackroyd" by Agatha Christie - This classic novel features one of Christie's most famous detectives, Hercule Poirot, as he investigates the murder of a wealthy man in a small English village.
+
+                "Murder on the Orient Express" by Agatha Christie - Another famous work by Agatha Christie, this novel follows Hercule Poirot as he solves a murder that occurs on a luxury train traveling through Europe.
+                
+                "The Girl with the Dragon Tattoo" by Stieg Larsson - While not exclusively set in England, part of this gripping thriller takes place in the UK. It follows journalist Mikael Blomkvist and hacker Lisbeth Salander as they delve into a decades-old disappearance and uncover dark secrets.</td></p>
+        </div>
+    </div>
+
+  </main>
+    <!--End Main-->
+  </div>
+
+  <!--Scripts-->
+  <!--ApexCharts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js"></script>
+
+    <!--JS link-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

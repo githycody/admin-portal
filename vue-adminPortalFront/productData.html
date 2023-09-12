@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--<link rel="icon" href="/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--End Font-->
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #f2f2d1;
+        }
+        </style>
+
+  </head>
+  <body>
+   <!-- <div id="app"></div>-->
+    <div class="grid-container">
+
+    <!--Header-->
+    <header class ="header">
+    <div class="menu-icon" onclick="openSidebar()">
+      <span class="material-icons-outlined">menu</span> 
+    </div>
+
+    <div class = "header-left">
+      <span class="material-icons-outlined">search</span>
+    </div>
+    <div class="header-right">
+      <span class="material-icons-outlined">notifications</span>
+      <span class="material-icons-outlined">mail</span>
+      <span class="material-icons-outlined">account_circle</span>
+    </div>
+  </header>
+
+    <!--End Header-->
+
+    <!--Sidebar-->
+    <aside id="sidebar">
+    <div class="sidebar-title">
+      <div class="sidebar-brand">
+        <span class="material-icons-outlined">chat</span> ShopMate
+      </div>
+      <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+    </div>
+
+    <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">dashboard</span> 
+          <a href="dashboard.html"> Dashboard</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">storefront</span> 
+          <a href="storeData.html"> Manage Store Data </a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">inventory_2</span> 
+          <a href="ProductData.html"> Manage Product Data </a>
+        </li>
+       <!--
+      <li class="sidebar-list-item">
+        <span class="material-icons-outlined">tune</span> Customize Chatbot
+      </li>
+    -->
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">quiz</span>
+          <a href="faq.html"> FAQ</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">history</span> 
+          <a href="chatbotHistory.html"> Chatbot History </a>
+        </li>
+      </ul>
+  </aside>
+    <!--End Sidebar-->
+
+    <!--Main-->
+    <main class="main-container">
+    <div class="main-title">
+      <p class = "font-weight-bold"> MANAGE PRODUCT DATA </p>
+    </div>
+
+    <table style="width:100%">
+        <tr>
+            <th>Product name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            
+        </tr>
+        <tr>
+            <td>Wuthering Heights</td>
+            <td>Emily Bronte</td>
+            <td>Romance novel, Tragedy, Gothic fiction</td>
+            <td>R175</td>
+            <td>Romance</td>
+            <td>Two families of the landed gentry living on the West Yorkshire moors, the Earnshaws and the Lintons, 
+                and their turbulent relationships with the Earnshaws' foster son, Heathcliff. </td>
+        </tr>
+        <tr>
+            <td>Jane Eyre</td>
+            <td>Charlotte Bronte</td>
+            <td>Romance novel, Bildungsroman, Gothic fiction</td>
+            <td>R150</td>
+            <td>Romance</td>
+            <td>The novel follows the story of Jane, a seemingly plain and simple girl as she battles through life's struggles. 
+                Jane has many obstacles in her life - her cruel and abusive Aunt Reed, the grim conditions at Lowood school, 
+                her love for Rochester and Rochester's marriage to Bertha. </td>
+        </tr>
+        <tr>
+            <td>The Great Gatsby</td>
+            <td>F. Scott Fitzgerald</td>
+            <td>Novel, Tragedy, Young Adult Fiction</td>
+            <td>R200</td>
+            <td>Young Adult</td>
+            <td>The novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and 
+                Gatsby's obsession to reunite with his former lover, Daisy Buchanan. </td>
+        </tr>
+        
+    </table>
+
+    <button class="button button1"> 
+        <a href="addProductData.html"> Add </a>
+    </button>
+    <button class="button button2">
+        <a href="editProductData.html"> Edit </a>
+    </button>
+    <button class="button button3">
+        <a href="editProductData.html"> Delete </a>
+    </button>
+   
+  </main>
+    <!--End Main-->
+  </div>
+
+  <!--Scripts-->
+  <!--ApexCharts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js"></script>
+
+    <!--JS link-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
